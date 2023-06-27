@@ -37,9 +37,9 @@ const dataContainer = document.querySelector("#data")
 
 const generate = () => {
     console.log(item.value)
-    if (isNaN(item.value) || item.value < 0 || item.value > 7)
+    if (isNaN(item.value) || item.value < 1 || item.value > 7)
     {
-        alert("Size should be between 0 and 7")
+        alert("Size should be between 1 and 7")
     }
     else {
         const localText = shuffle(text);
